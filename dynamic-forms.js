@@ -332,7 +332,8 @@ angular.module('dynform', [])
 						labelElement.attr('class', "col-sm-2 control-label");
 					}
 					newElement.prepend(labelElement.html(field.label.text));
-                    newElement.attr('class', "form-group");
+                    newElement.attr('class', "row form-group");
+					newElement.attr('id',field.id);
 					
                     //newElement.prepend(document.createTextNode(field.label + ' '));
                   }
